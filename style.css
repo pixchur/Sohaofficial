@@ -13,14 +13,26 @@
 
 }
 
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bgpic.jpg');
+	background-size:cover;
+	width: 100%;
+	height: 100vh;
+	/*background: black;*/
+	
+}
+
+
+
 
 
 header{
 	width: 100%;
 	height: 100vh;
-	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bgpic.jpg');
+	/*background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('bgpic.jpg');*/
 	background-size: cover;
 	font-family: 'Flamenco', cursive;
+	/*background-color: #000;*/
 	
 }
 
@@ -32,25 +44,28 @@ header{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-
-
+	
 }
 
 .logonew{
-	width: 30%;
 	text-align: center;
 }
 
 .logonew img{
-		height: 130px;
-		margin-top: 10px;
-		margin-right: 200px;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		top: 1px;
+		left: 30px;
 }
 
 .menu_list{
 	width: 70%;
 	text-align: right;
 	padding-right: 40px;
+	left: 28%;
+	position: absolute;
+	margin-top: 41px;
 
 }
 
@@ -76,13 +91,14 @@ header{
 .header_content{
 	text-transform: uppercase;
 	width: 100%;
-	height: 200px;
+	height: 250px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: rgba( 255, 255, 255, .8);
 	text-align: center;
+	background: rgba( 0, 255, 255, .1);
 }
 
 .header_content h2{
@@ -90,6 +106,8 @@ header{
 	font-size: 17px;
 	font-weight: 500;
 	letter-spacing: 0.3em;
+	width:100%;
+	margin-top: 28px;
 }
 
 .header_content h1{
@@ -97,6 +115,7 @@ header{
 	font-size: 50px;
 	font-weight: 500;
 	letter-spacing: 0.7em;
+	width:100%;
 }
 
 .header_content button{
@@ -106,6 +125,7 @@ header{
 	font-size: 12px;
 	background-color: transparent;
 	margin-right: 20px;
+	margin-top: -20px;
 }
 
 .header_content button a{
@@ -123,6 +143,7 @@ header{
 .colorchange{
 	animation: colorchangegraphicdesigner 5s infinite;
 }
+
 
 @keyframes colorchangegraphicdesigner{
 	0%{color: cyan;}
@@ -154,6 +175,95 @@ header{
 	100%{color: darkcyan;}
 
 }
+
+
+
+
+.header_content_p{
+	text-transform: uppercase;
+	width: 100%;
+	height: 200px;
+	position: absolute;
+	top: 29%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: rgba( 255, 255, 255, .8);
+	text-align: center;
+	padding: 10px;
+
+}
+
+.header_content_p h4{
+	/*margin-bottom: 50px;*/
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 0.4em;
+	position: absolute;
+	top: 60px;
+	width: 100%;
+}
+
+.header_content_p h2{
+	margin-bottom: 50px;
+	font-size: 50px;
+	font-weight: 500;
+	letter-spacing: 0.7em;
+	top: 30px;
+	position: absolute;
+	width: 100%;
+}
+
+.header_content_p h4:hover{
+	color: darkcyan;
+}
+
+
+.colorchange4{
+	animation: colorchangeportfolio 12s infinite;
+}
+
+@keyframes colorchangeportfolio{
+	0%{color: cyan;}
+	25%{color: darkcyan;}
+	50%{color: black;}
+	100%{color: cyan;}
+}
+
+.colorchange5{
+	animation: colorchangefeel 3s infinite;
+}
+
+@keyframes colorchangefeel{
+	0%{color:lightyellow;}
+	25%{color:lightgreen;}
+	50%{color:yellow;}
+	100%{color:orange;}
+}
+
+.colorchange6{
+	animation: colorchangefreeto 4s infinite;
+}
+
+@keyframes colorchangefreeto{
+	0%{color:red;}
+	25%{color:lightpink;}
+	50%{color:pink;}
+	100%{color:darkred;}
+}
+
+.colorchange7{
+	animation: colorchangeexplore 3s infinite;
+}
+
+@keyframes colorchangeexplore{
+	0%{color: yellow;}
+	25%{color:limegreen;}
+	50%{color: green;}
+	100%{color:lightgreen;}
+}
+
+
+
 
 .mobile-icon{display: none;}
 
@@ -202,3 +312,163 @@ header{
 
 	h1{font-size: 180%;}
 }
+
+/* footer menu */
+
+
+footer{
+	background-color: white;
+	background-size: cover;
+	width: 100%;
+	margin-top: 600px;
+}
+
+
+
+.foot_menu_{
+	position: absolute;
+	left: 30%;
+	
+}
+
+.footer_menu{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: absolute;
+}
+
+.footer_menu_list{
+	text-align: center;
+	margin-right: 50px;
+	font-size: 10px;
+
+}
+
+.footer_menu_list li{
+	display: inline-block;
+	text-transform: uppercase;
+	list-style: none;
+	letter-spacing: 2px;
+	padding-left: 50px;
+
+}
+
+.footer_menu_list li a{
+	color: darkcyan;
+	text-decoration: none;
+
+}
+
+.footer_menu_list li a:hover{
+	color: cyan;
+
+}
+
+/*copyright*/
+h4{
+	color: rgba( 255, 255, 255, .8);
+    font-family: 'Flamenco', Sans-Serif;
+    line-height: 100px;
+    text-align: center;
+    margin-bottom: -30px;
+}
+
+/*body{
+	margin: 0;
+	padding: 0;
+	animation: bgcolors infinite 8s;
+}
+
+@keyframes bgcolors{
+	0%{background:#57606f;}
+	25%{background:#2f3542;}
+	50%{background:#747d8c;}
+	75%{background:#a4b0be;}
+	100%{background:#ced6e0;}
+} 
+
+footer{
+	animation: bgcolors infinite 8s;
+}
+
+@keyframes bgcolors{
+	0%{background:#57606f;}
+	25%{background:#2f3542;}
+	50%{background:#747d8c;}
+	75%{background:#a4b0be;}
+	100%{background:#ced6e0;}
+} */
+
+/*.zanlogo{
+position: absolute;
+border: 2px solid;
+background: white;
+text-align: center;
+bottom: -185px;
+left: 150px;
+}
+
+.cannibitch{
+position: absolute;
+border: 2px solid;
+text-align: center;
+bottom: -185px;
+left: 352px;
+}
+
+.abstract{
+position: absolute;
+border: 2px solid white;
+text-align: center;
+bottom: -185px;
+left: 552px;
+}
+
+.sun{
+position: absolute;
+border: 2px solid white;
+text-align: center;
+bottom: -185px;
+left: 754px;
+}
+
+.royal{
+position: absolute;
+border: 2px solid white;
+text-align: center;
+background: white;
+bottom: -185px;
+left: 956px;
+}
+
+.image_list{
+	position: absolute;
+	left: 40px;
+	list-style: none;
+	text-decoration: none;
+	bottom: 6px;
+}*/
+
+img{
+	width: 250px;
+	height: 250px;
+	
+
+}
+
+
+table{
+	position: absolute;
+	top: 150px;
+	width: 100%;
+	background: black;
+
+}
+
+
+
+
+
